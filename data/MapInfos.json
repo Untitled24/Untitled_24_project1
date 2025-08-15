@@ -1,6 +1,5 @@
 [
 null,
-
 {"id":1,"expanded":true,"name":"HumanTown","order":10,"parentId":4,"scrollX":1404,"scrollY":855.4285714285713},
 {"id":2,"expanded":true,"name":"Prairie","order":3,"parentId":4,"scrollX":1769.4545454545455,"scrollY":1049.4545454545455},
 {"id":3,"expanded":false,"name":"RunDownHouse","order":28,"parentId":31,"scrollX":1081.3333333333333,"scrollY":630.6666666666666},
@@ -48,5 +47,4 @@ null,
 {"id":45,"expanded":false,"name":"RoadtoDemonLordCastleTop","order":41,"parentId":44,"scrollX":1962.6666666666667,"scrollY":946.6666666666666},
 {"id":46,"expanded":true,"name":"RoadtoDemonLordCastleRight","order":42,"parentId":44,"scrollX":3710.6666666666665,"scrollY":652},
 {"id":47,"expanded":false,"name":"DemonLordCastle","order":43,"parentId":4,"scrollX":1946.3999999999999,"scrollY":1135.2}
-
 ]
