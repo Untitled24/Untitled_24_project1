@@ -7,49 +7,34 @@
  * Free to use and/or modify for any project, no credit required.
  */
 // M06) Blank equip type names count as previous non-blank equip type.
-void (() => {
+// void (() => {
+(function() {
 'use strict';
 
     // E.g. "Weapon", "Shield", "Ring", "", "Amulet" - defines 2 ring slots.
 
-    /**
-     * Tracks duplicate equip types.
-     * @type {Map<number,number[]>}
-     */
-    const dupeTypes = new Map();
+    /** Array of root values for each equip type ID. */
+    const types = [];
 
-    /** Initialises `dupeTypes`. */
+    /** Initialises {@linkcode types}. */
     const initDupeTypes = function() {
         const E = $dataSystem.equipTypes;
         const L = E.length;
-        let root = 1;
-        dupeTypes.clear();
-        // blank equip type names count as preceding non-blank equip type ID
+        let root = types[0] = 1;
         for (let n = 1; ++n < L;)
-            if (!E[n]) {
-                if (dupeTypes.has(root))
-                    dupeTypes.get(root).push(n);
-                else
-                    dupeTypes.set(root, [n]);
-            } else
-                root = n;
+            types[n - 1] = E[n] ? root = n : root;
     };
 
     /**
-     * Maps duplicate slots to their root equip type ID.
-     * @param {number} etypeId input equip type ID
-     * @param {number} n source index
-     * @param {number[]} arr source array
-     * @returns {number} output equip type ID
+     * Maps given equip type ID to its root type ID.
+     * @param {number} eTypeId input equip type ID
+     * @returns {number} "real" equip type ID.
      */
-    const dupeSlot = function(etypeId) {
-        for (const [k, v] of dupeTypes.entries())
-            if (v.contains(etypeId))
-                return k;
-        return etypeId;
+    const dupeSlot = function(eTypeId) {
+        return types[eTypeId - 1];
     };
 
-    // Initialise dupe types.
+    // Initialise dupe types on game boot.
     void (alias => {
         Scene_Boot.prototype.start = function() {
             initDupeTypes();
