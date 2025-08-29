@@ -14,8 +14,9 @@ null,
 {"id":11,"expanded":false,"name":"BeforeForestDungeon","order":18,"parentId":1,"scrollX":1755.2727272727273,"scrollY":1181.4545454545455},
 {"id":12,"expanded":true,"name":"RealWorld","order":1,"parentId":0,"scrollX":2353.5,"scrollY":706.5},
 {"id":13,"expanded":false,"name":"SecretCave","order":4,"parentId":2,"scrollX":884.7272727272727,"scrollY":516},
-{"id":14,"expanded":false,"name":"HumanKingdomCastleCutscene","order":3,"parentId":5,"scrollX":1081.3333333333333,"scrollY":700},
-null,
+
+{"id":14,"expanded":false,"name":"HumanKingdomCastleCutscene","order":3,"parentId":0,"scrollX":1081.3333333333333,"scrollY":1550.6666666666667},
+
 {"id":15,"expanded":false,"name":"SecretBasement","order":10,"parentId":1,"scrollX":884.7272727272727,"scrollY":524.7272727272727},
 {"id":16,"expanded":false,"name":"WeaponShop","order":17,"parentId":1,"scrollX":884.7272727272727,"scrollY":516},
 null,
