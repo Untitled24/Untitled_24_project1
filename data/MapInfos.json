@@ -1,8 +1,7 @@
 [
 null,
-
 {"id":1,"expanded":true,"name":"HumanTown","order":10,"parentId":4,"scrollX":760,"scrollY":633.7777777777778},
-{"id":2,"expanded":true,"name":"Prairie","order":4,"parentId":4,"scrollX":1558.6666666666667,"scrollY":1081.3333333333333},
+{"id":2,"expanded":true,"name":"Prairie","order":4,"parentId":4,"scrollX":1548,"scrollY":1070.6666666666667},
 {"id":3,"expanded":false,"name":"RunDownHouse","order":29,"parentId":31,"scrollX":720.8888888888889,"scrollY":420.44444444444446},
 {"id":4,"expanded":true,"name":"Island Map","order":2,"parentId":0,"scrollX":1081.3333333333333,"scrollY":609.3333333333334},
 {"id":5,"expanded":false,"name":"HumanKingdomCastle","order":3,"parentId":4,"scrollX":1081.3333333333333,"scrollY":1550.6666666666667},
@@ -49,5 +48,4 @@ null,
 {"id":46,"expanded":true,"name":"RoadtoDemonLordCastleRight","order":45,"parentId":44,"scrollX":3258.6666666666665,"scrollY":516.4444444444445},
 {"id":47,"expanded":false,"name":"DemonLordCastle","order":46,"parentId":4,"scrollX":1331.5555555555557,"scrollY":1605.3333333333333},
 {"id":48,"expanded":true,"name":"HauntedHouseDungeon3Chaos","order":34,"parentId":35,"scrollX":1296,"scrollY":777.7777777777778}
-
 ]
